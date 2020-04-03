@@ -18,7 +18,8 @@ login_manager.login_message_category = 'info'
 mail = Mail()
 
 
-
+# this is the main entrypoint of the application
+# run.py calls this function to 'create' the app
 def create_app(config_class=Config):
     # initialize certain settings within application
     app = Flask(__name__)
